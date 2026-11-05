@@ -1,0 +1,23 @@
+[project]
+name = "projet"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ezzine-Seddik", email = "seddikezzine8@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "openpyxl>=3.1.5",
+    "pandas>=3.1.1",
+    "pytest>=9.2.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+projet = "projet:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
